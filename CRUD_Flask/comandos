@@ -1,0 +1,18 @@
+1. instalar extensão Python
+2. (apagar pastas ven e migrations)
+* abir terminal sudo systemctl start mysql
+* abrir php e criar banco de dados com mesmo nome sempre
+3. ctrl + shift + p     -> procurar por eviroment
+4. criar enviroment  ->   .venv   -> python3
+5. conferir se criou a pasta venv (no lugar certo, se n tiver no lugar, move ela p junto das outras)
+6. abrir e o terminal e conferir se esta com .venv
+7. digitar os comandos:
+    pip install flask
+    pip install Flask-SQLAlchemy
+    pip install Flask-Migrate
+    pip install Flask-Script
+    pip install pymysql
+    flask db init (conferir se criou a migrations)
+    flask db migrate -m "Migração Inicial"
+    flask db upgrade (banco de dados deve estar correto nesse passo)
+    flask run --debug (segura ctrl e clica com mouse p abrir local host)
