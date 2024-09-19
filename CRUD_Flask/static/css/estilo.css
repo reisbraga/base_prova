@@ -1,0 +1,164 @@
+/* problemas a resolver: mensagem de sucesso 
+https://www.brasilcode.com.br/35-botoes-css-com-animacao/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+a, input{
+    display: block;
+}
+
+/* _________________HEADER__________________ */
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 6rem;
+    background-color: brown;
+
+}
+header img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+/* _________________MAIN__________________ */
+
+main {
+    min-height: calc(100vh - 15rem);
+    background-color: white;
+    background-size: 5%;
+
+}
+
+/* _________________FORM__________________ */
+
+form {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    font-size: 2rem;
+    
+    margin-left: 47.5rem;
+    margin-right: 47.5rem;
+
+    margin-top: 10rem;
+    
+}
+
+
+/* _________________botão:VOLTAR__________________ */
+
+
+.Voltar{
+    display: flex;
+    justify-content: right;
+
+    color: white;
+    text-decoration: none;
+    background-color: brown;
+    border-radius: 20rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+
+}
+
+.Voltar:hover {
+    background-color: red;
+    text-decoration: none;
+}
+
+/* _________________botão:ADICIONAR__________________ */
+
+.Adicionar {
+    background-color: brown;
+    border-radius: 20rem;
+    color: white;
+    width: 5rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    
+
+    
+}
+
+.Adicionar:hover {
+    background-color: red;
+    text-decoration: none;
+    
+}
+   
+
+/* _________________botão:SALVAR__________________ */
+
+.Salvar {
+    background-color: brown;
+    border-radius: 20rem; 
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.Salvar:hover {
+    background-color: red;
+    text-decoration: none;
+}
+
+
+/* _________________TABLE__________________ */
+
+table, tr, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 1.5rem;
+
+    margin: 7rem auto;
+}
+
+
+/* _________________MESSAGE__________________ */
+
+.message {
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-align: center;
+    padding-top: 5rem;
+
+    margin-bottom: -7rem;
+}
+
+.message.success {
+    color: greenyellow;
+}
+
+.message.error {
+    color: red;
+}
+
+/* _________________FOOTER__________________ */
+
+footer {
+
+    height: 2rem;
+    background-color: rgb(16, 16, 16);
+    color:aliceblue;
+    text-align: right;
+    width: 100%;
+
+}
